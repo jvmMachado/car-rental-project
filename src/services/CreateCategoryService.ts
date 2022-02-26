@@ -6,7 +6,7 @@ interface IRequest {
 }
 
 class CreateCategoryService {
-  categoriesRepository: CategoriesRepository;
+  private categoriesRepository: CategoriesRepository;
   constructor(categoriesRepository: CategoriesRepository) {
     this.categoriesRepository = categoriesRepository;
   }
